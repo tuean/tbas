@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "TBAS — 标签页快照",
+  "short_name": "TBAS",
+  "version": "0.1.0",
+  "description": "把 Edge 的分组标签页保存为快照，随时查看、按组恢复；保存并关闭，一键释放内存。",
+  "minimum_chrome_version": "110",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "unlimitedStorage",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "打开 TBAS",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "open-dashboard": {
+      "suggested_key": {
+        "default": "Alt+Shift+T",
+        "mac": "Alt+Shift+T"
+      },
+      "description": "打开 TBAS 面板"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+*.tmp
+tbas-report-*.html
+.tbas/
+
+# 截图含内部系统信息，仅本地保留
+docs/*.png

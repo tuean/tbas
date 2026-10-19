@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TBAS · 标签页快照</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <img src="icons/icon48.png" alt="" width="36" height="36">
+      <div class="brand-text">
+        <strong>TBAS</strong>
+        <small>Tab Baseline Archive System</small>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="live" id="live-stat"><span class="live-dot"></span>正在读取浏览器标签…</span>
+      <button class="icon-btn" id="settings-btn" type="button" title="设置">⚙ <span>设置</span></button>
+    </div>
+  </header>
+
+  <section class="capture-card">
+    <div class="capture-glow" aria-hidden="true"></div>
+    <div class="capture-head">
+      <div class="capture-title">
+        <h1>保存当前标签页</h1>
+        <p class="hint" id="capture-hint">窗口、分组、固定页和顺序，一起存下来。</p>
+      </div>
+      <div class="env-picker">
+        <span class="env-label">保存到环境</span>
+        <div class="env-tabs" id="capture-env" role="group" aria-label="选择环境"></div>
+      </div>
+    </div>
+
+    <div class="capture-form">
+      <label class="field grow">
+        <span>快照名称</span>
+        <input id="snapshot-name" type="text" maxlength="120" placeholder="留空自动命名，例如：办公 · 周五下班" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>范围</span>
+        <select id="scope-select">
+          <option value="all">所有窗口</option>
+          <option value="current">当前窗口</option>
+        </select>
+      </label>
+      <label class="switch" title="同一窗口内相同网址只保留一个">
+        <input type="checkbox" id="dedupe-toggle">
+        <span class="switch-ui" aria-hidden="true"></span>
+        <span>保存时去重</span>
+      </label>
+      <button class="btn ghost-light" id="capture-select-btn" type="button" disabled>选择标签…</button>
+      <button class="btn primary" id="capture-btn" type="button" disabled>
+        <span>保存快照</span>
+        <kbd id="save-kbd">⌘S</kbd>
+      </button>
+      <button class="btn danger-ghost" id="capture-close-btn" type="button" disabled>保存并关闭</button>
+    </div>
+    <p class="capture-note" id="capture-note"></p>
+  </section>
+
+  <section class="library">
+    <div class="library-head">
+      <div class="env-filters" id="env-filter" role="group" aria-label="按环境筛选"></div>
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" placeholder="搜索快照、分组、标题或网址" autocomplete="off">
+        <kbd id="search-kbd">⌘K</kbd>
+      </div>
+      <div class="library-actions">
+        <button class="btn small" id="import-btn" type="button">导入</button>
+        <button class="btn small" id="export-all-btn" type="button">导出全部</button>
+        <input id="file-input" type="file" accept=".json,application/json" multiple hidden>
+      </div>
+    </div>
+    <div class="library-meta" id="library-meta"></div>
+    <div id="snapshot-list" class="snapshot-list"></div>
+
+    <div id="empty-state" class="empty-state" hidden>
+      <div class="empty-art" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+      <h2>还没有快照</h2>
+      <p>点击上方「保存快照」，把当前所有分组存下来。<br>周五「保存并关闭」释放内存，周一回来按组恢复。</p>
+      <div class="empty-actions">
+        <button class="btn" id="empty-demo" type="button">载入示例快照</button>
+        <button class="btn primary" id="empty-import" type="button">导入 JSON</button>
+      </div>
+      <ol class="empty-steps">
+        <li><b>保存</b><span>记录窗口、分组、颜色、固定页和标签顺序</span></li>
+        <li><b>关闭</b><span>快照落盘后关闭标签，立刻释放内存</span></li>
+        <li><b>恢复</b><span>选择整个快照、某个分组或单个标签</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>数据只保存在本机浏览器</span>
+    <span class="sep">·</span>
+    <span>无页面读取权限 · 无网络上传</span>
+    <span class="grow"></span>
+    <span id="storage-stat"></span>
+    <button class="link-btn" id="footer-demo" type="button">载入示例</button>
+  </footer>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root" class="toast-root" aria-live="polite"></div>
+<noscript><p style="padding:20px;font-family:sans-serif">TBAS 需要启用 JavaScript。</p></noscript>
+<script type="module" src="dashboard.js"></script>
+</body>
+</html>

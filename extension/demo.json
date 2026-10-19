@@ -1,0 +1,395 @@
+{
+  "schema": "tbas.bundle",
+  "version": 1,
+  "exportedAt": "2026-10-19T10:51:41.358Z",
+  "generator": "tbas demo",
+  "snapshots": [
+    {
+      "schema": "tbas.snapshot",
+      "version": 1,
+      "id": "demo-office-v1",
+      "name": "示例 · 办公周五归档",
+      "env": "office",
+      "tags": [
+        "示例",
+        "周五"
+      ],
+      "createdAt": "2026-10-17T10:10:00.000Z",
+      "source": {
+        "browser": "Edge",
+        "userAgent": "",
+        "extensionVersion": "0.1.0"
+      },
+      "stats": {
+        "windows": 2,
+        "groups": 5,
+        "tabs": 18,
+        "pinned": 1,
+        "restorable": 17,
+        "unrestorable": 1,
+        "uniqueTabs": 17,
+        "duplicates": 1
+      },
+      "windows": [
+        {
+          "key": "w1",
+          "focused": true,
+          "incognito": false,
+          "groups": [
+            {
+              "key": "g1",
+              "title": "项目 · 客户门户",
+              "color": "blue",
+              "collapsed": false
+            },
+            {
+              "key": "g2",
+              "title": "代码审查",
+              "color": "purple",
+              "collapsed": false
+            },
+            {
+              "key": "g3",
+              "title": "文档",
+              "color": "green",
+              "collapsed": false
+            }
+          ],
+          "tabs": [
+            {
+              "key": "t1",
+              "url": "https://jira.example.com/browse/DEMO-10895",
+              "title": "DEMO-10895 标签页快照工具 · Jira",
+              "pinned": true,
+              "active": true,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t2",
+              "url": "https://jira.example.com/browse/DEMO-10895?utm_source=weekly",
+              "title": "DEMO-10895 标签页快照工具 · Jira",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t3",
+              "url": "https://confluence.example.com/display/DEMO/TBAS+设计评审",
+              "title": "TBAS 设计评审 - DEMO - Confluence",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t4",
+              "url": "https://gitlab.example.com/demo/frontend/-/merge_requests/128",
+              "title": "feat: 标签页快照恢复 !128 · Merge Requests · GitLab",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t5",
+              "url": "https://github.com/facebook/react/pull/29876",
+              "title": "Fix hydration mismatch by… by reactjs · Pull Request #29876",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t6",
+              "url": "https://stackoverflow.com/questions/79234567/chrome-tabgroups-api-restore-groups",
+              "title": "How to restore chrome tab groups after restart? - Stack Overflow",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t7",
+              "url": "https://developer.mozilla.org/zh-CN/docs/Web/API/Compression_Streams_API",
+              "title": "Compression Streams API - MDN Web Docs",
+              "pinned": false,
+              "active": false,
+              "group": "g3",
+              "restorable": true
+            },
+            {
+              "key": "t8",
+              "url": "https://developer.chrome.com/docs/extensions/reference/api/tabGroups",
+              "title": "chrome.tabGroups | API reference | Chrome for Developers",
+              "pinned": false,
+              "active": false,
+              "group": "g3",
+              "restorable": true
+            },
+            {
+              "key": "t9",
+              "url": "https://www.typescriptlang.org/docs/handbook/2/generics.html",
+              "title": "TypeScript: Handbook - Generics",
+              "pinned": false,
+              "active": false,
+              "group": "g3",
+              "restorable": true
+            },
+            {
+              "key": "t10",
+              "url": "https://outlook.office.com/mail/inbox",
+              "title": "邮件 - 收件箱 - Outlook",
+              "pinned": false,
+              "active": false,
+              "group": null,
+              "restorable": true
+            },
+            {
+              "key": "t11",
+              "url": "edge://settings/profiles",
+              "title": "设置 - 个人资料",
+              "pinned": false,
+              "active": false,
+              "group": null,
+              "restorable": false
+            }
+          ]
+        },
+        {
+          "key": "w2",
+          "focused": false,
+          "incognito": false,
+          "groups": [
+            {
+              "key": "g1",
+              "title": "调研 · 混合检索",
+              "color": "cyan",
+              "collapsed": false
+            },
+            {
+              "key": "g2",
+              "title": "周报素材",
+              "color": "yellow",
+              "collapsed": true
+            }
+          ],
+          "tabs": [
+            {
+              "key": "t1",
+              "url": "https://arxiv.org/abs/2402.12345",
+              "title": "[2402.12345] Efficient Retrieval-Augmented Generation: A Survey",
+              "pinned": false,
+              "active": true,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t2",
+              "url": "https://www.semanticscholar.org/search?q=hybrid+retrieval",
+              "title": "Hybrid retrieval - Semantic Scholar",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t3",
+              "url": "https://docs.pinecone.io/guides/indexes/choose-a-metric",
+              "title": "Choose a similarity metric - Pinecone Docs",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t4",
+              "url": "https://weaviate.io/blog/hybrid-search-fusion-algorithms",
+              "title": "Hybrid Search Fusion Algorithms | Weaviate",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t5",
+              "url": "https://wiki.example.com/pages/viewpage.action?pageId=1000001",
+              "title": "演示周报模板 - Demo Wiki",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t6",
+              "url": "https://grafana.example.com/d/demo-overview",
+              "title": "演示总览 - Grafana",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t7",
+              "url": "https://www.feishu.cn/docx/TbasWeeklyNotes",
+              "title": "本周进展与下周计划 - 飞书文档",
+              "pinned": false,
+              "active": false,
+              "group": null,
+              "restorable": true
+            }
+          ]
+        }
+      ],
+      "notes": "演示用快照。包含两个窗口、5 个分组、一个重复标签和一个 edge:// 内部页。"
+    },
+    {
+      "schema": "tbas.snapshot",
+      "version": 1,
+      "id": "demo-home-v1",
+      "name": "示例 · 周末个人",
+      "env": "home",
+      "tags": [
+        "示例",
+        "周末"
+      ],
+      "createdAt": "2026-10-18T12:45:00.000Z",
+      "source": {
+        "browser": "Edge",
+        "userAgent": "",
+        "extensionVersion": "0.1.0"
+      },
+      "stats": {
+        "windows": 1,
+        "groups": 3,
+        "tabs": 10,
+        "pinned": 1,
+        "restorable": 10,
+        "unrestorable": 0,
+        "uniqueTabs": 10,
+        "duplicates": 0
+      },
+      "windows": [
+        {
+          "key": "w1",
+          "focused": true,
+          "incognito": false,
+          "groups": [
+            {
+              "key": "g1",
+              "title": "旅行 · 京都",
+              "color": "orange",
+              "collapsed": false
+            },
+            {
+              "key": "g2",
+              "title": "购物清单",
+              "color": "red",
+              "collapsed": true
+            },
+            {
+              "key": "g3",
+              "title": "影音",
+              "color": "pink",
+              "collapsed": false
+            }
+          ],
+          "tabs": [
+            {
+              "key": "t1",
+              "url": "https://www.xiaohongshu.com/explore/kyoto-autumn-2025",
+              "title": "京都红叶季 5 天 4 晚懒人攻略 - 小红书",
+              "pinned": false,
+              "active": true,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t2",
+              "url": "https://www.google.com/maps/place/Kyoto",
+              "title": "Kyoto · Google Maps",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t3",
+              "url": "https://www.booking.com/city/jp/kyoto.zh-cn.html",
+              "title": "京都酒店推荐 - Booking.com",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t4",
+              "url": "https://www.jrpass.com/zh/coverage",
+              "title": "JR Pass 适用范围与路线图",
+              "pinned": false,
+              "active": false,
+              "group": "g1",
+              "restorable": true
+            },
+            {
+              "key": "t5",
+              "url": "https://item.jd.com/100012345678.html",
+              "title": "索尼 WH-1000XM5 降噪耳机 - 京东",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t6",
+              "url": "https://detail.tmall.com/item.htm?id=654321",
+              "title": "行李箱 20 寸登机箱 - 天猫",
+              "pinned": false,
+              "active": false,
+              "group": "g2",
+              "restorable": true
+            },
+            {
+              "key": "t7",
+              "url": "https://www.bilibili.com/video/BV1xx411c7mD",
+              "title": "用扩展管理你的标签页 · Bilibili",
+              "pinned": true,
+              "active": false,
+              "group": "g3",
+              "restorable": true
+            },
+            {
+              "key": "t8",
+              "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+              "title": "Kyoto in Autumn - 4K walking tour - YouTube",
+              "pinned": false,
+              "active": false,
+              "group": "g3",
+              "restorable": true
+            },
+            {
+              "key": "t9",
+              "url": "https://www.zhihu.com/question/123456789",
+              "title": "一个人去京都需要注意什么？ - 知乎",
+              "pinned": false,
+              "active": false,
+              "group": null,
+              "restorable": true
+            },
+            {
+              "key": "t10",
+              "url": "https://www.douban.com/note/888888888/",
+              "title": "京都寺院巡礼 - 豆瓣",
+              "pinned": false,
+              "active": false,
+              "group": null,
+              "restorable": true
+            }
+          ]
+        }
+      ],
+      "notes": "演示用快照。用于验证环境筛选与个人 / 办公切换。"
+    }
+  ]
+}

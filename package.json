@@ -1,0 +1,24 @@
+{
+  "name": "tbas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TBAS — 把 Edge 分组标签页保存为快照，随时查看、按组恢复、一键归档释放内存。",
+  "license": "MIT",
+  "bin": {
+    "tbas": "./bin/tbas.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/core.test.mjs test/engine.test.mjs test/storage.test.mjs test/cli.test.mjs",
+    "test:e2e": "node test/e2e/extension.e2e.mjs && node test/e2e/persistence.e2e.mjs",
+    "check": "node scripts/check.mjs",
+    "demo": "node bin/tbas.mjs demo",
+    "demo:sync": "node scripts/sync-demo.mjs",
+    "report": "node bin/tbas.mjs report --open",
+    "tbas": "node bin/tbas.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
